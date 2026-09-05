@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#5a183f">
+  <title>Happy Birthday Ifemi ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="birthdayMusic" loop preload="auto">
+    <source src="music/rush.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicButton" class="music-button" aria-label="Toggle music">🎵</button>
+  <div id="transitionSparkles" class="transition-sparkles"></div>
+
+  <!-- SCREEN 1 -->
+  <section class="screen active" id="screenOne">
+    <div class="ambient-glow"></div><div class="floating-hearts"><span>❤️</span><span>💗</span><span>✨</span><span>💕</span><span>🌸</span><span>💖</span></div>
+    <div class="welcome-content glass-panel pop-in">
+      <div class="eyebrow">A LITTLE SURPRISE FOR YOU</div>
+      <h1>Hey, <span>Ifemi</span> ❤️</h1>
+      <p class="subtitle">My beautiful girl, I made something special just for you.</p>
+      <div class="gift-box" id="giftBox" aria-label="Gift box"><div class="gift-lid"><div class="bow"></div></div><div class="gift-body"><div class="gift-ribbon"></div></div></div>
+      <button id="tapButton" class="primary-button">💚 TAP TO OPEN 💚</button>
+      <p class="made-with">Made with <span>❤️</span> by Olaitan</p>
+    </div>
+  </section>
+
+  <!-- SCREEN 2 -->
+  <section class="screen" id="screenTwo">
+    <div class="celebration" id="celebration"></div>
+    <div class="reveal-content glass-panel pop-in">
+      <div class="burst-heart">❤️</div><div class="eyebrow">TODAY IS YOUR DAY</div>
+      <h1>SURPRISE! 🎉</h1><h2>Happy Birthday, My Love ❤️</h2>
+      <div class="birthday-date">16 <i>•</i> 09 <i>•</i> 2026 🎂</div>
+      <p>Today is more than a date on the calendar. It is a celebration of the beautiful person you are and the joy you bring into my life.</p>
+      <button id="continueButton" class="primary-button">💌 CONTINUE</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 3 -->
+  <section class="screen" id="screenThree">
+    <div class="cake-page">
+      <div class="eyebrow">A WISH JUST FOR YOU</div><h1>Make A Wish, <span>Ifemi</span> ❤️</h1>
+      <p class="cake-intro">Close your eyes, make your sweetest wish, then tap the button. ✨</p>
+      <div class="cake-scene">
+        <div class="cake-glow"></div>
+        <div class="candles"><div class="candle"><div class="flame"></div></div><div class="candle"><div class="flame"></div></div><div class="candle"><div class="flame"></div></div></div>
+        <div class="cake cake-realistic"><div class="cake-top"><div class="cake-cream"></div><span>IFEMI</span><div class="berry">🍓</div><div class="berry berry2">🍓</div></div><div class="cake-middle"></div><div class="cake-bottom"></div><div class="cake-plate"></div></div>
+      </div>
+      <button id="wishButton" class="primary-button">🕯️ MAKE A WISH</button>
+      <div id="wishResult" class="wish-result">✨ Wish Made! ✨<br><small>May your sweetest wish come true, my love. ❤️</small></div>
+      <button id="letterButton" class="secondary-button">💌 READ MY LETTER</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 4 -->
+  <section class="screen" id="screenFour">
+    <div class="letter-page">
+      <div class="letter-decoration">💗 ✨ 💗</div>
+      <div class="letter-card glass-panel pop-in">
+        <div class="letter-icon">💌</div><div class="eyebrow">A LETTER FROM MY HEART</div><h1>To My Beautiful Girl ❤️</h1>
+        <p class="letter-text">My Ifemi,</p>
+        <p class="letter-text">Happy Birthday to the most beautiful and amazing girl in my world. ❤️</p>
+        <p class="letter-text">Today is more than just your birthday to me. It is a reminder of how grateful I am that you came into my life.</p>
+        <p class="letter-text">You are my love, my happiness, my peace, my partner in crime, and one of the greatest blessings I could ever ask for.</p>
+        <p class="letter-text">I pray that this new chapter brings you everything your heart desires. May you grow, shine, succeed, smile more, and become everything you dream of becoming.</p>
+        <p class="letter-text">No matter what happens, always remember that you are special, you are loved, and you deserve beautiful things.</p>
+        <p class="letter-text">Happy Birthday, my Ifemi. 🎂💗<br>I love you today.<br>I will love you tomorrow.<br>And I will keep choosing you, every day. ❤️</p>
+        <p class="signature">Forever yours,<br><strong>Olaitan Opemiposi Emmanuel ❤️</strong></p>
+      </div>
+      <button id="memoriesButton" class="primary-button">📸 OUR LITTLE MEMORIES</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 5 -->
+  <section class="screen" id="screenFive">
+    <div class="memories-page">
+      <div class="memory-hearts">❤️ 💕 ✨ 💗</div><div class="eyebrow">THE GIRL BEHIND MY SMILE</div><h1>Our Little Memories 📸</h1>
+      <p class="memory-intro">Every moment with you is a memory I want to keep forever. ❤️</p>
+      <div class="memory-grid">
+        <article class="memory-card"><div class="memory-photo"><img src="photos/ifemi-1.jpg" alt="Ifemi smiling" loading="lazy"></div><h2>Your Beautiful Smile ❤️</h2><p>Your smile has a way of making everything feel better.</p></article>
+        <article class="memory-card"><div class="memory-photo"><img src="photos/ifemi-2.jpg" alt="Ifemi with blue glasses" loading="lazy"></div><h2>That Pretty Face 💕</h2><p>One of those little pictures that makes me stop and smile.</p></article>
+        <article class="memory-card"><div class="memory-photo"><img src="photos/ifemi-3.jpg" alt="Ifemi portrait" loading="lazy"></div><h2>Simply You 🥰</h2><p>Beautiful, calm, sweet and completely yourself.</p></article>
+        <article class="memory-card"><div class="memory-photo"><img src="photos/ifemi-4.jpg" alt="Ifemi portrait" loading="lazy"></div><h2>My Favorite Girl 💗</h2><p>Some memories are special simply because they happened with you.</p></article>
+      </div>
+      <div class="memory-message">💌 <strong>And the best part?<br>We still have so many memories to make. ❤️</strong></div>
+      <button id="nextButton" class="primary-button">💖 NEXT</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 6 -->
+  <section class="screen" id="screenSix">
+    <div class="love-page"><div class="love-floating">❤️ ✨ 💕 🌸 💗</div><div class="eyebrow">A FEW OF A MILLION REASONS</div><h1>Why I Love You ❤️</h1>
+      <p class="love-intro">Ifemi, there are so many reasons why my heart keeps choosing you. 🥹💕</p>
+      <div class="love-card glass-panel"><div class="reason-number" id="reasonNumber">1</div><div class="reason-icon" id="reasonIcon">❤️</div><h2 id="reasonTitle">Your Beautiful Heart</h2><p id="reasonText">I love the beautiful person you are inside. Your heart, your kindness, and the way you care make you incredibly special to me.</p></div>
+      <button id="reasonButton" class="secondary-button">💕 SHOW ME ANOTHER REASON</button>
+      <div class="love-final" id="loveFinal"><div class="big-love-heart">❤️</div><h2>And the biggest reason...</h2><p>I love you simply because <strong>you are YOU. ❤️</strong></p><p>There is nobody else I would rather share this beautiful journey with.</p></div>
+      <button id="futureButton" class="primary-button">🌹 OUR FUTURE</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 7 -->
+  <section class="screen" id="screenSeven">
+    <div class="future-page"><div class="future-floating">🌹 ❤️ ✨ 💕 ✨ ❤️ 🌹</div><div class="eyebrow">THE PART I LOOK FORWARD TO</div><h1>Our Future ❤️</h1>
+      <p class="future-intro">Ifemi, I don't just love the moments we have today. I look forward to all the beautiful moments still waiting for us.</p>
+      <div class="future-timeline">
+        <article class="future-card"><div class="future-icon">💕</div><div><h2>More Memories</h2><p>More laughter, more adventures, more pictures, more silly moments, and countless memories we'll look back on together.</p></div></article>
+        <article class="future-card"><div class="future-icon">🌱</div><div><h2>Growing Together</h2><p>I want us to keep learning, growing, supporting each other, and becoming better versions of ourselves.</p></div></article>
+        <article class="future-card"><div class="future-icon">✈️</div><div><h2>Beautiful Adventures</h2><p>New places, new experiences, random adventures, and stories that we'll tell again and again.</p></div></article>
+        <article class="future-card"><div class="future-icon">🏡</div><div><h2>A Beautiful Life</h2><p>I hope we continue choosing each other, supporting each other, and building something beautiful together.</p></div></article>
+      </div>
+      <div class="forever-card"><div class="forever-heart">❤️</div><h2>One Thing I Know...</h2><p>No matter how many birthdays come and go, I hope I get to celebrate many of them with you.</p><p>Today, tomorrow, next year and beyond...</p><strong>I will keep choosing you. ❤️</strong></div>
+      <button id="finalButton" class="primary-button">🎁 ONE LAST SURPRISE</button>
+    </div>
+  </section>
+
+  <!-- FINAL SCREEN -->
+  <section class="screen" id="finalScreen">
+    <div class="final-page"><div id="fireworks"></div><div class="final-sparkles">✨ 💗 ✨ ❤️ ✨ 💕 ✨</div><div class="final-heart">❤️</div>
+      <p class="final-small">THIS DAY IS ALL ABOUT YOU</p><h1>Happy Birthday,<br><span>My Ifemi ❤️</span></h1><div class="final-date">16 • 09 • 2026 🎂</div>
+      <div class="final-message"><p>Francis Precious Oluwatimileyin,</p><p>I hope this little surprise reminds you of just how deeply loved and appreciated you are. ❤️</p><p>You are not just someone special in my life. You have become a beautiful part of my heart, my happiness, and my dreams.</p><p>As you celebrate another beautiful year, I pray that life gives you countless reasons to smile, dream, grow and shine. ✨</p><p>May your heart always know happiness. May your dreams become reality. And may we continue creating beautiful memories together. 🥹❤️</p><div class="final-love-line">I LOVE YOU, IFEMI. ❤️</div><p class="final-forever">Today. Tomorrow. Always.</p></div>
+      <div class="names"><span>Olaitan Opemiposi Emmanuel</span><div class="name-heart">❤️</div><span>Francis Precious Oluwatimileyin</span></div><div class="forever-text">FOREVER YOURS ❤️</div>
+      <button id="playAgainButton" class="secondary-button">🔄 PLAY AGAIN</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
